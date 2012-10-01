@@ -1,6 +1,6 @@
 <package>
   <name>bondcpp</name>
-  <version>1.7.1</version>
+  <version>1.7.2</version>
   <description brief="bondcpp">
 
      C++ implementation of bond, a mechanism for checking when
@@ -14,6 +14,7 @@
 
   <build_depend>bond</build_depend>
   <build_depend>boost</build_depend>
+  <build_depend>catkin</build_depend>
   <build_depend>roscpp</build_depend>
   <build_depend>smclib</build_depend>
   <build_depend>uuid</build_depend>
