@@ -8,6 +8,6 @@ Standards-Version: 3.9.2
 
 Package: ros-groovy-bondpy
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, uuid-dev
+Depends: ${shlibs:Depends}, ${misc:Depends}, uuid-dev,ros-groovy-smclib
 Description: Python implementation of bond, a mechanism for checking when another process has terminated.
 
