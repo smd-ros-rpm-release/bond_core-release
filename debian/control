@@ -2,7 +2,7 @@ Source: ros-groovy-test-bond
 Section: misc
 Priority: extra
 Maintainer: Vincent Rabaud <vrabaud@willowgarage.com>
-Build-Depends: debhelper (>= 7.0.50~), ros-groovy-genmsg
+Build-Depends: debhelper (>= 7.0.50~), ros-groovy-catkin,ros-groovy-genmsg
 Homepage: 
 Standards-Version: 3.9.2
 
