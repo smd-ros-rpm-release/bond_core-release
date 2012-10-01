@@ -2,12 +2,12 @@ Source: ros-groovy-bondcpp
 Section: misc
 Priority: extra
 Maintainer: Vincent Rabaud <vrabaud@willowgarage.com>
-Build-Depends: debhelper (>= 7.0.50~), ros-groovy-roscpp,uuid-dev,ros-groovy-bond,ros-groovy-smclib,libboost-all-dev
+Build-Depends: debhelper (>= 7.0.50~), libboost1.46-all-dev,ros-groovy-roscpp,ros-groovy-catkin,ros-groovy-bond,ros-groovy-smclib,uuid-dev
 Homepage: 
 Standards-Version: 3.9.2
 
 Package: ros-groovy-bondcpp
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, ros-groovy-roscpp,uuid-dev,ros-groovy-bond,ros-groovy-smclib,libboost-all-dev
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost1.46-all-dev,ros-groovy-roscpp,uuid-dev,ros-groovy-bond,ros-groovy-smclib
 Description: C++ implementation of bond, a mechanism for checking when another process has terminated.
 
