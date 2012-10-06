@@ -1,0 +1,13 @@
+Source: ros-groovy-bondpy
+Section: misc
+Priority: extra
+Maintainer: Vincent Rabaud <vrabaud@willowgarage.com>
+Build-Depends: debhelper (>= 7.0.50~), ros-groovy-rospy,ros-groovy-catkin,ros-groovy-bond,ros-groovy-smclib
+Homepage: http://ros.org/wiki/bondpy
+Standards-Version: 3.9.2
+
+Package: ros-groovy-bondpy
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, uuid-dev,ros-groovy-smclib
+Description: Python implementation of bond, a mechanism for checking when another process has terminated.
+
