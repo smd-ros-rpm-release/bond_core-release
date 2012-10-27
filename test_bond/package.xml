@@ -1,10 +1,8 @@
 <package>
   <name>test_bond</name>
-  <version>1.7.4</version>
-  <description brief="test_bond">
-
+  <version>1.7.5</version>
+  <description>
      Contains tests for [[bond]], including tests for [[bondpy]] and [[bondcpp]].
-
   </description>
   <author>Stuart Glaser</author>
   <maintainer email="vrabaud@willowgarage.com">Vincent Rabaud</maintainer>
@@ -12,10 +10,9 @@
   <url>http://ros.org/wiki/test_bond</url>
 
   <build_depend>catkin</build_depend>
+  <build_depend>bondcpp</build_depend>
   <build_depend>genmsg</build_depend>
+  <build_depend>rostest</build_depend>
 
-  <test_depend>bondcpp</test_depend>
   <test_depend>bondpy</test_depend>
-  <test_depend>genmsg</test_depend>
-  <test_depend>rostest</test_depend>
 </package>
