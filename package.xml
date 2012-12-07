@@ -1,13 +1,15 @@
 <package>
   <name>test_bond</name>
-  <version>1.7.6</version>
+  <version>1.7.7</version>
   <description>
      Contains tests for [[bond]], including tests for [[bondpy]] and [[bondcpp]].
   </description>
   <author>Stuart Glaser</author>
   <maintainer email="vrabaud@willowgarage.com">Vincent Rabaud</maintainer>
   <license>BSD</license>
-  <url>http://ros.org/wiki/test_bond</url>
+  <url type="website">http://www.ros.org/wiki/test_bond</url>
+  <url type="bugtracker">https://github.com/ros/bond_core/issues</url>
+  <url type="repository">https://github.com/ros/bond_core</url>
 
   <build_depend>catkin</build_depend>
   <build_depend>bondcpp</build_depend>
