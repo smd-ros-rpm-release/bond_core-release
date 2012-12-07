@@ -1,26 +1,25 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(bondcpp)
 
-find_package(catkin REQUIRED)
-
 find_package(Boost REQUIRED)
 find_package(catkin REQUIRED bond roscpp smclib)
-catkin_package(DEPENDS bond Boost roscpp smclib
-               INCLUDE_DIRS include
-               LIBRARIES ${PROJECT_NAME}
-)
 
-include_directories(SYSTEM ${catkin_INCLUDE_DIRS}
-                           ${BOOST_INCLUDE_DIRS}
+include_directories(SYSTEM ${BOOST_INCLUDE_DIRS})
+include_directories(include ${catkin_INCLUDE_DIRS})
+
+catkin_package(
+  INCLUDE_DIRS include
+  LIBRARIES ${PROJECT_NAME}
+  CATKIN_DEPENDS bond roscpp smclib
+  DEPENDS Boost
 )
-include_directories(include)
 
 add_library(${PROJECT_NAME}
   src/timeout.cpp
   src/bond.cpp
   src/BondSM_sm.cpp
 )
-target_link_libraries(${PROJECT_NAME} ${BOOST_LIBRARIES})
+target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES} ${BOOST_LIBRARIES})
 if(TARGET bond_gencpp)
   add_dependencies(${PROJECT_NAME} bond_gencpp)
 endif()
