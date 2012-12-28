@@ -1,0 +1,12 @@
+Source: ros-groovy-test-bond
+Section: misc
+Priority: extra
+Maintainer: Vincent Rabaud <vrabaud@willowgarage.com>
+Build-Depends: debhelper (>= 7.0.50~), ros-groovy-genmsg,ros-groovy-rostest,ros-groovy-catkin,ros-groovy-bondcpp
+Homepage: http://www.ros.org/wiki/test_bond
+Standards-Version: 3.9.2
+
+Package: ros-groovy-test-bond
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, 
+Description: Contains tests for [[bond]], including tests for [[bondpy]] and [[bondcpp]].
