@@ -1,3 +1,3 @@
 [git-buildpackage]
-upstream-branch=release/smclib/1.7.10
+upstream-branch=@(release_tag)
 upstream-tree=branch
