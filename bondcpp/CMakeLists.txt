@@ -20,8 +20,8 @@ add_library(${PROJECT_NAME}
   src/BondSM_sm.cpp
 )
 target_link_libraries(${PROJECT_NAME} uuid ${catkin_LIBRARIES} ${BOOST_LIBRARIES})
-if(TARGET bond_gencpp)
-  add_dependencies(${PROJECT_NAME} bond_gencpp)
+if(catkin_EXPORTED_TARGETS)
+  add_dependencies(${PROJECT_NAME} ${catkin_EXPORTED_TARGETS})
 endif()
 
 # install stuff
