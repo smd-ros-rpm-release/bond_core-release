@@ -1,0 +1,12 @@
+Source: ros-hydro-test-bond
+Section: misc
+Priority: extra
+Maintainer: Vincent Rabaud <vrabaud@willowgarage.com>
+Build-Depends: debhelper (>= 7.0.50~), ros-hydro-bondcpp, ros-hydro-catkin (>= 0.5.68), ros-hydro-genmsg, ros-hydro-rostest
+Homepage: http://www.ros.org/wiki/test_bond
+Standards-Version: 3.9.2
+
+Package: ros-hydro-test-bond
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, 
+Description: Contains tests for [[bond]], including tests for [[bondpy]] and [[bondcpp]].
