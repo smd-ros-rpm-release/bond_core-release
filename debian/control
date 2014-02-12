@@ -1,0 +1,12 @@
+Source: ros-indigo-bondcpp
+Section: misc
+Priority: extra
+Maintainer: Vincent Rabaud <vrabaud@willowgarage.com>
+Build-Depends: debhelper (>= 7.0.50~), libboost-all-dev, ros-indigo-bond, ros-indigo-catkin, ros-indigo-roscpp, ros-indigo-smclib, uuid-dev
+Homepage: http://www.ros.org/wiki/bondcpp
+Standards-Version: 3.9.2
+
+Package: ros-indigo-bondcpp
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-all-dev, ros-indigo-bond, ros-indigo-roscpp, ros-indigo-smclib, uuid-dev
+Description: C++ implementation of bond, a mechanism for checking when another process has terminated.
