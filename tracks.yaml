@@ -29,7 +29,7 @@ tracks:
     - git-bloom-generate -y rosdebian --prefix release/:{ros_distro} :{ros_distro}
       -i :{release_inc}
     devel_branch: null
-    last_version: 1.7.13
+    last_version: 1.7.14
     name: bond_core
     patches: null
     release_inc: '0'
