@@ -1,12 +1,12 @@
 <package>
   <name>bondcpp</name>
-  <version>1.7.13</version>
+  <version>1.7.14</version>
   <description>
     C++ implementation of bond, a mechanism for checking when
     another process has terminated.
   </description>
   <author>Stuart Glaser</author>
-  <maintainer email="vrabaud@willowgarage.com">Vincent Rabaud</maintainer>
+  <maintainer email="esteve@osrfoundation.org">Esteve Fernandez</maintainer>
   <license>BSD</license>
   <url type="website">http://www.ros.org/wiki/bondcpp</url>
   <url type="bugtracker">https://github.com/ros/bond_core/issues</url>
